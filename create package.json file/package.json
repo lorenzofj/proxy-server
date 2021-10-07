@@ -8,5 +8,7 @@
   },
   "author": "franjlorenzo",
   "license": "ISC",
-  "dependencies": {}
+  "dependencies": {
+    "async": "^3.2.1"
+  }
 }
