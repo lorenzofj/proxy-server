@@ -1,0 +1,17 @@
+#intro{
+    background-image: url(imagenfondo2.jpg);
+}
+
+img{
+    border-radius: 50%;
+    display: block;
+    margin: auto;
+    height: auto;
+}
+
+hr{
+    height: 3px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(to left, black, white);
+}
