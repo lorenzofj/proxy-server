@@ -13,7 +13,13 @@ In the middle of the third link I got stuck with a lot of terms I've usually hea
 - https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS
 - https://www.tutorialspoint.com/http/http_methods.htm
 
-I'm currently learning the basics of Node.js watching and reading these sources:
+I've learned the basics of Node.js watching and reading these sources:
 
 1. https://www.youtube.com/watch?v=RLtyhwFtXQA
 2. https://www.educba.com/node-dot-js-commands/
+
+Then I realized I needed to learn how to create and use an NoSQL database, so I chose MongoDB and started with the basics:
+
+1. https://www.youtube.com/watch?v=SnqPyqRh4r4
+2. https://www.youtube.com/watch?v=EE8ZTQxa0AM
+3. https://www.w3schools.com/nodejs/nodejs_mongodb.asp
