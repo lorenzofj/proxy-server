@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-content {
+    flex-grow: 1;
+    text-align: left;
+}
+
+h1 {
+    text-align: center;
+    margin: 1.5rem;
+    font-weight: bold;
+    font-family: Impact, Charcoal, sans-serif;
+}
+
+h2 {
+    text-align: center;
+    padding-bottom: 8.5rem;
+}
+
+#primary-heading {
+    background-image: url("../images/stars-background2.png");
+}

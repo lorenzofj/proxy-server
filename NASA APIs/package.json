@@ -4,6 +4,7 @@
   "description": "",
   "main": "app.js",
   "scripts": {
+    "dev": "node src/app.js",
     "test": "test"
   },
   "keywords": [
@@ -15,6 +16,8 @@
   "license": "ISC",
   "dependencies": {
     "axios": "^0.24.0",
-    "custom-env": "^2.0.1"
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "hbs": "^4.1.2"
   }
 }
