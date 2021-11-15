@@ -11,7 +11,7 @@ body {
 
 .main-content {
     flex-grow: 1;
-    text-align: left;
+    min-height: 100%;
 }
 
 h1 {
@@ -23,9 +23,46 @@ h1 {
 
 h2 {
     text-align: center;
-    padding-bottom: 8.5rem;
 }
 
 #primary-heading {
     background-image: url("../images/stars-background2.png");
+}
+
+.box {
+    /*background-color: white;*/
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+    color:#FFFFFF; 
+    background: #06303A;
+    font-size:1.5em;
+    text-align: center;
+    line-height:100px;
+    }
+
+.first{
+    /*border:1px solid red;*/
+    width:90%;
+    height:90%;
+    position:absolute;
+    text-align: center;
+}
+.second{
+   /*border:2px solid blue;*/
+   width: 90%;
+   height: 90%;
+   position: absolute;
+   text-align: center;
 }

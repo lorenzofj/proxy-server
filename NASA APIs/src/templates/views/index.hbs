@@ -15,36 +15,40 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
-<body class="bg-dark text-white">
+<body class="bg-dark text-white" id="body">
     <div class="jumbotron" id="primary-heading">
-        <h1>Astronomical image of the day</h1>
+        <h1>ASTRONOMICAL IMAGES AND VIDEOS BY NASA</h1>
     </div>
     <div class="main-content container-fluid">
-        <div class="row justify-content-center align-items-center">
-            <div class="col-sm-4">
+        <div class="row">
+            <div class="col-sm-5">
                 <form id="info">
-                    <fieldset>
-                        <legend>Or choose a date of your preference!</legend>
-                        <div class="form-group">
-                            <label for="date">Pick a date:</label>
-                            <input class="form-control" id="date" type="date" value="{2021-10-26}">
+                    <h2>Choose a date of your preference!</h2>
+                    <div class="form-group">
+                        <label for="date">Pick a date:</label>
+                        <input class="form-control" id="date" type="date" value="{2021-10-26}">
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <button class="btn btn-primary" type="submit">Search</button>
                         </div>
-                        <div class="row">
-                            <div class="col">
-                                <button class="btn btn-primary" type="submit">Search image</button>
-                            </div>
-                            <div class="col text-right">
-                                <button class="btn btn-primary" type="submit">Previous</button>
-                                <button class="btn btn-primary" type="submit">Next</button>
-                            </div>
-                        </div>                       
-                    </fieldset>
+                        <div class="col text-right">
+                            <button class="btn btn-primary" type="submit">Previous</button>
+                            <button class="btn btn-primary" type="submit">Next</button>
+                        </div>
+                    </div>
                 </form>
             </div>
-            <div class="col-sm-8">
-                <h2>Todays image</h2>
-                <img class="message-1" src="">
-                <p class="message-2"></p>
+            <div class="col-sm-7">
+                <h2 class="imageHeading">Todays image/video:</h2>
+                <div class="box">                    
+                    <div class="first">
+                        <img class="imageByNasa" src="">
+                    </div>
+                    <div class="second">
+                        <iframe class="videoByNasa" width="560" height="315" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
