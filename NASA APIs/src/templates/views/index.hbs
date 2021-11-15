@@ -15,41 +15,42 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
-<body class="bg-dark text-white" id="body">
+<body class="text-white" id="body">
     <div class="jumbotron" id="primary-heading">
         <h1>ASTRONOMICAL IMAGES AND VIDEOS BY NASA</h1>
     </div>
-    <div class="main-content container-fluid">
-        <div class="row">
-            <div class="col-sm-5">
-                <form id="info">
-                    <h2>Choose a date of your preference!</h2>
-                    <div class="form-group">
-                        <label for="date">Pick a date:</label>
-                        <input class="form-control" id="date" type="date" value="{2021-10-26}">
-                    </div>
+
+    <div class="datepicker-image center">
+        <div class="box_wrap">
+            <h2 class="pb-2">Choose a date of your preference!</h2>
+            <form id="info">
+                <div class="form-group">
                     <div class="row">
-                        <div class="col">
-                            <button class="btn btn-primary" type="submit">Search</button>
+                        <div class="col-sm-8">
+                            <input class="form-control" id="date" type="date" value="">
                         </div>
-                        <div class="col text-right">
-                            <button class="btn btn-primary" type="submit">Previous</button>
-                            <button class="btn btn-primary" type="submit">Next</button>
+                        <div class="col-sm-4">
+                            <button class="button" type="submit">Search</button>
                         </div>
-                    </div>
-                </form>
-            </div>
-            <div class="col-sm-7">
-                <h2 class="imageHeading">Todays image/video:</h2>
-                <div class="box">                    
-                    <div class="first">
-                        <img class="imageByNasa" src="">
-                    </div>
-                    <div class="second">
-                        <iframe class="videoByNasa" width="560" height="315" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                 </div>
+            </form>
+            <div class="row">
+                <div class="col-sm-6 text-right">
+                    <form id="previous">
+                        <button class="button" type="submit">Previous</button>
+                    </form>                   
+                </div>
+                <div class="col-sm-6 text-left">
+                    <form id="next">
+                        <button class="button" type="submit">Next</button>
+                    </form>                   
+                </div>
             </div>
+        </div>
+        <div class="box_wrap">
+            <h2 class="imageHeading pb-2">Todays image/video:</h2>
+            <div class="box" id="box"></div>
         </div>
     </div>
 </body>

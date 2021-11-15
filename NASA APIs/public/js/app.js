@@ -1,7 +1,6 @@
 //Get form, date picker and elements to show the data
 const info = document.querySelector('#info');
 const datePicker = document.querySelector('#date');
-const imageByNasa = document.querySelector('.imageByNasa');
 const imageHeading = document.querySelector('.imageHeading');
 const videoByNasa = document.querySelector('.videoByNasa');
 const messageTwo = document.querySelector('.message-2');
@@ -54,22 +53,16 @@ const fetchInfo = (data) => {
             response.json()
                 .then((data) => {
                     if (data.error) {
-                        imageByNasa.textContent = data.error;
+                        document.getElementById("box").innerHTML = `<p>${data.error}</p>`;
                     }
                     else {
                         if(data.url.indexOf('youtube') > -1){
-                            if(imageByNasa.getAttribute("src") != "") imageByNasa.setAttribute("src", "");
+                            document.getElementById("box").innerHTML = `<iframe class="videoByNasa" width="600" height="400" src=${data.url} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
                             if(datePicker.value != today) imageHeading.textContent = "Video from " + datePicker.value;
-                            videoByNasa.setAttribute("src", data.url);
-                            videoByNasa.setAttribute("width", 600);
-                            videoByNasa.setAttribute("height", 400);
                         }
                         else{
-                            if(videoByNasa.getAttribute("src") != "") videoByNasa.setAttribute("src", "");
+                            document.getElementById("box").innerHTML = `<img class="imageByNasa" src=${data.url} width="500" height="600">`;
                             if(datePicker.value != today) imageHeading.textContent = "Image from " + datePicker.value;                       
-                            imageByNasa.setAttribute("src", data.url);
-                            imageByNasa.setAttribute("width", 500);
-                            imageByNasa.setAttribute("height", 600);
                         }                       
                     }
                 })

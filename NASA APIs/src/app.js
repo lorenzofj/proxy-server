@@ -22,7 +22,7 @@ app.use(express.static(path.join(__dirname, '../public')));
 //Creates base URL route "/" and renders index view
 app.get('', (req, res) => {
     res.render('index', {
-        title: 'Astronomical image of the day',
+        title: 'Astronomical images & videos by NASA',
     });
 });
 
