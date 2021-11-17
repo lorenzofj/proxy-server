@@ -42,11 +42,15 @@ app.post('/apod', async (req, res) => {
         const imageOfTheDay = await NasaImageOfTheDay.getImage(date);
 
         const url = imageOfTheDay.data.url;
-        //console.log(imageOfTheDay);
-        //console.log(url);
+        const explanation = imageOfTheDay.data.explanation;
+        const copyright = imageOfTheDay.data.copyright;
+        const title = imageOfTheDay.data.title;
 
         return res.json({
-            url
+            url,
+            explanation,
+            copyright,
+            title
         })
     }
     catch(error) {
