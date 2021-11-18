@@ -4,6 +4,7 @@
   "description": "",
   "main": "app.js",
   "scripts": {
+    "start": "node src/app.js",
     "dev": "node src/app.js",
     "test": "test"
   },

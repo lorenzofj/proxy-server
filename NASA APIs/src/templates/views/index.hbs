@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
-<body class="text-white" id="body">
+<body id="body">
     <div class="jumbotron" id="primary-heading">
         <h1>ASTRONOMICAL IMAGES AND VIDEOS BY NASA</h1>
     </div>
@@ -35,23 +35,22 @@
                     </div>
                 </div>
             </form>
-            <div class="row">
-                <div class="col-sm-6 text-right">
-                    <form id="previous">
-                        <button class="button" type="submit">Previous</button>
-                    </form>                   
-                </div>
-                <div class="col-sm-6 text-left">
-                    <form id="next">
-                        <button class="button" type="submit">Next</button>
-                    </form>                   
-                </div>
+            <div class="group-btn text-center">
+                <form id="previous">
+                    <button class="button mr-3" type="submit">Previous</button>
+                </form>
+                <form id="next">
+                    <button class="button" id="btn-next" type="submit">Next</button>
+                </form>
             </div>
         </div>
         <div class="explanation center">
             <h3>Explanation</h3>
             <div class="box-behind">
+                <p id="title"></p>
                 <p id="explanation"></p>
+                <p id="copyright"></p>
+                <p id="fullSizeImage"></p>
             </div>
         </div>
         <div class="box_wrap">
